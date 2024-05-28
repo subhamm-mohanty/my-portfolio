@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4c5cb79c64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI Engineer</p>
+                <h1>Hi, I'm <span class="text sec-text">Subham</span><br>from India</h1>
+
+                <!-- <h1>Hi, I'm <span>Subham</span><br>from India</h1> -->
+            </div>
+        </div>
+    </div>
+    <!--    about   -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG-by me.jpg" alt="me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="p">Hii , I'm SUBHAM , An Mca Student At Trident Academy Of Creative Technology With a Fervor For Tech Exploration. From Foundational Languages like C, C++, and Java to diving deep into Python's AI/ML libraries , I've honed my Skills in Pandas, NumPy, Matplotlib, and TensorFlow. Delving into Frontend Technologies Such as HTML, CSS, and JavaScript , Alongside Mastering Git and GitHub for Version Control, I thrive on collaborative projects. Specializing in AI drives me to Stay Ahead of the Curve in Tech Trends. My goal is to Apply my Expertise in Solving Real-World Problems and Make a Positive Impact on the Tech Community.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI/ML</span><br>Machine Learning models/Python Libraries </li>
+                            <li><span>WEB DEVELOPMENT</span><br>Html/Css/Javascript</li>
+                            <li><span>DATABASE</span><br>Mysql/Oracle</li>
+                            <li><span>VERSION-CONTROL</span><br>Git/Github</li>
+                            <li><span>API</span><br>Api Integration</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>AI/ML practitioner at Trident</li>
+                            <li><span>2023</span><br>Web Developer</li>
+                             <!--<li><span>2016 - 2017</span><br>Building Android/Ios apps</li>
+                            <li><span>2016 - 2017</span><br>Building Android/Ios apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Trident Academy Of Technology</li>
+                            <li><span>2020</span><br>Lokanath Mahavidyalaya</li>
+                            <li><span>2019</span><br>Aakash Institute Bhubneswar</li>
+                            <li><span>2017</span><br>The Guide Residential College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- -----services----- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>AI/ML</h2>
+                    <p>Empowering innovation through AI/ML, shaping the future one algorithm at a time</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>WEB DESIGN</h2>
+                    <p>Crafting captivating digital experiences through innovative web design</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>VERSION-CONTROL</h2>
+                    <p>Mastering version control, shaping collaborative coding journeys with precision</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.png">
+                        <div class="layer">
+                            <h3>SMART WASTE MANAGEMENT SYSTEM</h3>
+                            <p>Transforming waste management through intelligent systems, paving the way for a sustainable future</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-2.png">
+                        <div class="layer">
+                            <h3>MY-PORTFOLIO</h3>
+                            <p>Curating my digital footprint with a portfolio that showcases my passion for technology and dedication to innovation</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-3.png">
+                        <div class="layer">
+                            <h3>RESPONSIVE-WEBSITE</h3>
+                            <p>Creating seamless user experiences across all devices with responsive website design</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                      <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------contact------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>subhamsk7325@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7325943874</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/subham--mohanty"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/subhamm-mohanty"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/___t_h_e__d_e_v_i_l___"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/sk.subham.509?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <a href="mycv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           <pre><p>&copy; Copyright @ Subham</p></pre>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+
+    const text = document.querySelector(".sec-text");
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "Subham";
+        }, 0);
+        setTimeout(() => {
+            text.textContent = " a Developer";
+        }, 4000);
+        setTimeout(() => {
+            text.textContent = " a Coder";
+        }, 5000);
+        setTimeout(() => {
+            text.textContent = " a Problem Solver";
+        }, 6000);
+    }
+    textLoad();
+    setInterval(textLoad,7000);
+
+</script>
+  
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8Fei5BJBhdTtYTLnnbH1bBMKwxcbdzuM2fnSDb-bDwLBhacuAHGgtKHh5EOQxUj5-Vw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+      </script>
+
+</body>
+</html>
